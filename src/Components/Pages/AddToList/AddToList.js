@@ -22,7 +22,7 @@ const AddToList = () => {
         }
 
         // Post method to add task
-        fetch('http://localhost:5000/addTask', {
+        fetch('https://todo-app-server-opal.vercel.app/addTask', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

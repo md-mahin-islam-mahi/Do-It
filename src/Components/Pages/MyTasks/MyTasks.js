@@ -7,7 +7,7 @@ const MyTasks = () => {
     const { user } = useContext(AuthContext);
 
         useEffect(() => {
-        fetch(`http://localhost:5000/tasks/${user.email}`)
+        fetch(`https://todo-app-server-opal.vercel.app/tasks/${user.email}`)
             .then(res => res.json())
             .then(data => setTasks(data))
     }, [user.email]);

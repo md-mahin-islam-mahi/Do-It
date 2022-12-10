@@ -4,7 +4,7 @@ const TaskTable = ({ task }) => {
 
 
     const finishedTask = (id) => {
-        fetch(`http://localhost:5000/finished-task/${id}`, {
+        fetch(`https://todo-app-server-opal.vercel.app/finished-task/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

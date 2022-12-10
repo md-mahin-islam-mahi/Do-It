@@ -14,7 +14,6 @@ const SignUp = () => {
         const password = form.password.value;
 
         signUp(email, password)
-        // .then(res => res.json())
         .then(data => {
             if (data) {
                 console.log(data);

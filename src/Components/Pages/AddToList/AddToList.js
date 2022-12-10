@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const AddToList = () => {
 
@@ -15,7 +16,16 @@ const AddToList = () => {
             time
         }
 
-        console.log(addedTask);
+        fetch('http://localhost:5000/addTask', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(addedTask)
+        })
+        .then(res => res.json())
+        // .then(data => console.log(data));
+        form.reset();
     }
 
     return (
@@ -34,7 +44,7 @@ const AddToList = () => {
                     <label className='mb-2'>
                         <span className="text-xl text-start">Set Date</span>
                     </label>
-                    <input name='date' type="text" placeholder="Date" className="input input-bordered" />
+                    <input name='date' type="text" placeholder="Date (dd/mm/yy)" className="input input-bordered" />
                 </div>
 
                 <div className="form-control mb-3">

@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import AddToList from "../Components/Pages/AddToList/AddToList";
 import Finished from "../Components/Pages/Finished/Finished";
 import Home from "../Components/Pages/Home/Home";
+import MyTasks from "../Components/Pages/MyTasks/MyTasks";
 import Main from "../Layout/Main";
 
 const routes = createBrowserRouter([
@@ -12,6 +13,10 @@ const routes = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />
+            },
+            {
+                path: "/myTasks",
+                element: <MyTasks />
             },
             {
                 path: "/add-to-list",

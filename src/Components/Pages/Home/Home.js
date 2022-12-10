@@ -10,7 +10,7 @@ const Home = () => {
                     <div className="max-w-md">
                         <h3>Welcome to</h3>
                         <h1 className="mb-5 text-5xl font-bold">Do It</h1>
-                        <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <p>A ToDo list app</p>
                         <Link to="/myTasks">
                             <button className='btn bg-[#0074DD]'>My Task List</button>
                         </Link>

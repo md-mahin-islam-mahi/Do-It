@@ -67,6 +67,7 @@ const AddToList = () => {
                 <div className="form-control mb-3">
                     <input type="submit" value="Add Task" className='btn text-white text-xl font-semibold mt-10' />
                 </div>
+                <p><span className=' text-yellow-400 text-xl font-semibold'>Warning: </span>Brfore adding tasks, you need to <Link className='text-blue-500 font-semibold' to = "/login">Login</Link> first</p>
             </form>
 
             <div>

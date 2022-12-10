@@ -21,7 +21,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: "/add-to-list",
-                element: <AddToList />
+                element:<AddToList />
             },
             {
                 path: "/signup",

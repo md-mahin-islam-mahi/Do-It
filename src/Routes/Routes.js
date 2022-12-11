@@ -5,6 +5,7 @@ import MyTasks from "../Components/Pages/MyTasks/MyTasks";
 import Login from "../Components/Pages/SignUp/Login/Login";
 import SignUp from "../Components/Pages/SignUp/SignUp";
 import Main from "../Layout/Main";
+import PrivateRoute from "./PrivateRoute";
 
 const routes = createBrowserRouter([
     {
@@ -21,7 +22,9 @@ const routes = createBrowserRouter([
             },
             {
                 path: "/add-to-list",
-                element:<AddToList />
+                element: <PrivateRoute>
+                    <AddToList />
+                </PrivateRoute>
             },
             {
                 path: "/signup",
